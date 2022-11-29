@@ -1,4 +1,16 @@
-function Asteroid() {
+const MovingObject = require("./moving_object");
+const Util = require("./utils");
+// const DEFAULT = {COLOR: , RADIUS: }
+
+class Asteroid extends MovingObject{
+    constructor(pos){
+        super(pos)
+        this.color = "red";
+        this.radius = 20;
+        this.vel = Util.randomVec(10)
+        // this.vel = Util.randomVec(Util.findNorm(this.vel)); //returns random vel with magnitude given
+    }
 
 }
-Asteroid.prototype = Object.create(MovingObject.prototype)
+
+module.exports = Asteroid;

@@ -1,4 +1,7 @@
-function GameView() {
-    this.game = new Game();
-    // this.canvas =
+const Game = require("./game");
+class GameView{
+    constructor(){
+        this.game = new Game();
+        // this.canvas =
+    }
 }

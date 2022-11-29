@@ -1,5 +1,6 @@
-function Ship(){
+const MovingObject = require("./moving_object");
+
+class Ship extends MovingObject{
 
 }
 
-Ship.prototype = Object.create(Ship.prototype)

@@ -1,5 +1,9 @@
-function Bullet(){
+const MovingObject = require("./moving_object")
+
+class Bullet extends MovingObject{
+    constructor(){
+        
+    }
 
 }
 
-Bullet.prototype = Object.create(MovingObject.prototype)
