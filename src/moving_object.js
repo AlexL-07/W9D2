@@ -7,9 +7,10 @@ class MovingObject {
         this.color = options["color"]
     }
 
-    move(){
-        this.pos[0] += this.vel[0]
-        this.pos[1] += this.vel[1]
+    move(ctx){
+        this.pos[0] += this.vel[0];
+        this.pos[1] += this.vel[1];
+        this.draw(ctx);
     }
 
     draw(ctx){

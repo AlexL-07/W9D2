@@ -19,17 +19,20 @@ class Game {
     }
 
     draw(ctx){
-        console.log('game.draw() is running!')
         ctx.clearRect(0,0,this.dim_x, this.dim_y);
         // for (let i=0; i<this.asteroids.length; i++){
         //     this.asteroids[i].draw(ctx);
         // }
-        this.asteroids.forEach(function(asteroid){asteroid.draw(ctx)})
+        this.asteroids.forEach(function(asteroid){
+            asteroid.draw(ctx)
+        })
         
     }
 
-    moveObjects(){
-        this.asteroids.forEach(function(asteroid){asteroid.move()})
+    moveObjects(ctx){
+        this.asteroids.forEach(asteroid => {
+            asteroid.move(ctx);
+        })
     }
 
     step(){

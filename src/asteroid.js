@@ -7,7 +7,7 @@ class Asteroid extends MovingObject{
         super(pos)
         this.color = "red";
         this.radius = 20;
-        this.vel = Util.randomVec(10)
+        this.vel = Util.randomVec(1000)
         // this.vel = Util.randomVec(Util.findNorm(this.vel)); //returns random vel with magnitude given
     }
 
